@@ -5,10 +5,10 @@ defmodule Todo.Mixfile do
     [
       app: :todo,
       version: "0.1.0",
-      elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      elixir: "~> 1.9",
+      start_permanent: Mix.env() == :prod,
       deps: deps(),
-      escript: [main_module: Todo.CLI],
+      escript: [main_module: Todo.CLI]
     ]
   end
 
